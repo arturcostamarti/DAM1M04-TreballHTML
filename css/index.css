@@ -35,3 +35,30 @@ button:hover {
 .targeta p {
     color: #96918A;
 }
+nav a {
+    color: #96918A;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #B33A3A;
+}
+.menu h1 {
+    color: #E6DFD3;
+    font-size: 24px;
+}
+
+.menu {
+    background: #252525;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer {
+    background: #252525;
+    color: #96918A;
+    padding: 15px;
+    text-align: right;
+}
