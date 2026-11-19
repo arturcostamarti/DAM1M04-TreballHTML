@@ -10,3 +10,28 @@ h1{
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
 }
+button {
+    background: #8B1E24;
+    color: #E6DFD3;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover {
+    background: #B33A3A;
+}
+.targeta {
+    background: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.targeta h2 {
+    color: #E6DFD3;
+}
+
+.targeta p {
+    color: #96918A;
+}
