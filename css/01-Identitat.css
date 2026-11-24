@@ -1,3 +1,5 @@
+/* Tasca 2 */
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--negro);color:var(--blanco);font-family:var(--texto);line-height:1.6;min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden}
@@ -9,3 +11,49 @@ img{height:auto}
 .seccion--alt{background:var(--gris)}
 /* Controles checkbox/radio: invisibles pero accesibles con teclado */
 .control{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+
+/* Tasca 3 */
+
+:root{
+  --negro:#151515;      /* fondo principal */
+  --gris:#252525;       /* secciones y tarjetas */
+  --rojo:#8B1E24;       /* botones, enlaces y detalles */
+  --rojo2:#B33A3A;      /* hover y elementos destacados */
+  --blanco:#E6DFD3;     /* texto principal */
+  --cemento:#96918A;    /* texto secundario */
+  --titulos:'Bebas Neue','Oswald',sans-serif;
+  --texto:'Roboto','Open Sans',sans-serif;
+  --radio:6px;
+  --t:.3s ease;
+}
+
+h1,h2,h3{font-family:var(--titulos);font-weight:400;letter-spacing:.04em;line-height:1.1}
+h1{font-size:clamp(3rem,10vw,6.5rem)}
+h2{font-size:clamp(2rem,5vw,3rem)}
+h3{font-size:1.7rem}
+p+p{margin-top:.5rem}
+a{color:var(--rojo2);text-decoration:none;transition:color var(--t)}
+a:hover,a:focus-visible{color:var(--blanco)}
+:focus-visible{outline:3px solid var(--blanco);outline-offset:3px}
+.titulo-pagina{margin-bottom:2rem;font-size:clamp(2.6rem,8vw,4.5rem);color:var(--rojo2)}
+.titulo-seccion{margin-bottom:2rem;padding-left:1rem;border-left:6px solid var(--rojo)}
+.texto-ancho{max-width:65ch;margin-bottom:2rem}
+.secundario{color:var(--cemento)}
+
+
+/* Botón */
+.boton{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.6rem 1.8rem;background:var(--rojo);border:2px solid var(--rojo);border-radius:var(--radio);font-family:var(--titulos);font-size:1.35rem;letter-spacing:.08em;color:var(--blanco);cursor:pointer;transition:background var(--t),border-color var(--t),transform var(--t)}
+.boton:hover,.boton:focus-visible{background:var(--rojo2);border-color:var(--rojo2);color:var(--blanco);transform:translateY(-3px) scale(1.03)}
+
+/* Tarjeta (se usa en Tasca 6, 7 y 9) */
+.tarjetas{display:flex;flex-wrap:wrap;gap:1.5rem}
+.tarjetas>.tarjeta{flex:1 1 260px}
+.tarjeta{background:var(--gris);border-bottom:3px solid var(--rojo);border-radius:var(--radio);overflow:hidden;transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.tarjeta:hover{transform:translateY(-6px);border-color:var(--rojo2);box-shadow:0 12px 24px rgba(0,0,0,.5)}
+.tarjeta__cuerpo{padding:1.25rem}
+.seccion--alt .tarjeta{background:var(--negro)}
+
+/* Pestañas / filtros (se usan en Tasca 7 y 9) */
+.pestanas{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+.pestanas label{display:flex;align-items:center;min-height:48px;padding:.5rem 1.5rem;background:var(--gris);border:2px solid var(--rojo);border-radius:var(--radio);font-family:var(--titulos);font-size:1.35rem;letter-spacing:.08em;cursor:pointer;transition:background var(--t),transform var(--t)}
+.pestanas label:hover{background:var(--rojo2);transform:translateY(-2px)}
