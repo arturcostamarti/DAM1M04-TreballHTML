@@ -6,9 +6,9 @@ body{background:var(--negro);color:var(--blanco);font-family:var(--texto);line-h
 main{flex:1}
 img,iframe,svg{display:block;max-width:100%}
 img{height:auto}
-.contenedor{width:100%;max-width:1100px;margin:0 auto;padding:0 1.25rem}
-.seccion{padding:3.5rem 0}
-.seccion--alt{background:var(--gris)}
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 1.25rem}
+.seccio{padding:3.5rem 0}
+.seccio--alt{background:var(--gris)}
 /* Controles checkbox/radio: invisibles pero accesibles con teclado */
 .control{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
 
@@ -35,9 +35,9 @@ p+p{margin-top:.5rem}
 a{color:var(--rojo2);text-decoration:none;transition:color var(--t)}
 a:hover,a:focus-visible{color:var(--blanco)}
 :focus-visible{outline:3px solid var(--blanco);outline-offset:3px}
-.titulo-pagina{margin-bottom:2rem;font-size:clamp(2.6rem,8vw,4.5rem);color:var(--rojo2)}
-.titulo-seccion{margin-bottom:2rem;padding-left:1rem;border-left:6px solid var(--rojo)}
-.texto-ancho{max-width:65ch;margin-bottom:2rem}
+.titol-pagina{margin-bottom:2rem;font-size:clamp(2.6rem,8vw,4.5rem);color:var(--rojo2)}
+.titol-seccio{margin-bottom:2rem;padding-left:1rem;border-left:6px solid var(--rojo)}
+.text-ampli{max-width:65ch;margin-bottom:2rem}
 .secundario{color:var(--cemento)}
 
 
@@ -51,7 +51,7 @@ a:hover,a:focus-visible{color:var(--blanco)}
 .tarjeta{background:var(--gris);border-bottom:3px solid var(--rojo);border-radius:var(--radio);overflow:hidden;transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
 .tarjeta:hover{transform:translateY(-6px);border-color:var(--rojo2);box-shadow:0 12px 24px rgba(0,0,0,.5)}
 .tarjeta__cuerpo{padding:1.25rem}
-.seccion--alt .tarjeta{background:var(--negro)}
+.seccio--alt .tarjeta{background:var(--negro)}
 
 /* Pestañas / filtros (se usan en Tasca 7 y 9) */
 .pestanas{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
