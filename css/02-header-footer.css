@@ -21,3 +21,64 @@
     letter-spacing: .08em;
     color:var(--blanco)
 }
+
+.hamburguesa{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:5px;
+    min-width: 48px;
+    min-height: 48px;
+    padding: 0 .7rem;
+    cursor:pointer;
+}
+
+.hamburguesa span{
+    height:3px;
+    background:var(--blanco);
+    transition:transform var(--t), opacity var(--t)
+}
+
+#menu-toggle:checked ~ .hamburguesa span:nth-child(1){
+    transform:translateY(8px) rotate(45deg)
+}
+#menu-toggle:checked ~ .hamburguesa span:nth-child(2){opacity:0}
+#menu-toggle:checked ~ .hamburguesa span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+#menu-toggle:focus-visible ~ .hamburguesa{outline:3px solid var(--blanco)}
+
+/* Animació */
+.menu {
+    width:100%;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+#menu-toggle:checked ~ .menu{max-height:360px}
+.menu ul{
+    display:flex;
+    flex-direction:column;
+    list-style:none;
+    padding-bottom:.5rem
+}
+
+.menu a{
+    display:block;
+    padding:.9rem 1rem;
+    border-left:4px solid transparent;
+    font-family:var(--titulos);
+    font-size:1.4rem;
+    letter-spacing:.08em;
+    color:var(--blanco);
+    transition:color var(--t),border-color var(--t),background var(--t)
+}
+.menu a:hover,.menu a:focus-visible{
+    color:var(--rojo2);
+    background:var(--gris)
+}
+
+.menu a.activo{
+    color:var(--rojo2);
+    border-left-color:var(--rojo2)
+}
+
