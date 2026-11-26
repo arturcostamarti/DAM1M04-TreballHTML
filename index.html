@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inici | Extremoduro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/01-Identitat.css">
+    <link rel="stylesheet" href="css/02-header-footer.css">
+    <link rel="stylesheet" href="css/03-pagines.css">
+    <link rel="stylesheet" href="css/04-animacions.css">
+    <link rel="stylesheet" href="css/05-responsive.css">
+
+</head>
+<body> 
+    <!-- Checkbox de l'interruptor -->
+     <input class="control" type="checkbox" id="anim-toggle" aria-label="Pausar l'animació del Hero">
+
+    <!-- Taca 4 -->
+    <header class="capcalera">
+        <input class="control" type="checkbox" id="menu-toggle" aria-label="Obrir o tancar el menu">
+        <a class="marca" href="index.html"><img src="imatges/logotip.jpg" alt="Logo de Extremoduro" width="44" height="44">Extremoduro</a>
+        <label class="hamburguesa" for="menu-toggle"><span></span><span></span><span></span></label>
+
+    
+
+     <nav class="menu" aria-label="Navegacio principal">
+      <ul>
+        <li><a href="index.html"class="actiu" aria-current="page">Inici</a></li>
+        <li><a href="musica.html">Musica</a></li>
+        <li><a href="historia.html">Història</a></li>
+        <li><a href="concerts.html">Concerts</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+      </ul>
+     </nav>
+    </header>
+
+    <main>
+        
+    <!-- Taca 6 -->
+     <section class="hero">
+     <img class="hero_fons" src="imatges/Extremoduro.png" alt="Fotografia del grup Extremoduro">
+     <div class="hero_brillo"></div>
+     <div class="contenidor hero_contingut">
+        <h1>Extremoduro</h1>
+        <p class="hero_lema">Rock transgressiu des de Plasència. Lletres sense filtre i guitarres a tot volum.</p>
+        <a class="boto" href="musica.html">Escoltar discografia</a>
+     </div>
+
+     <!-- Animació Vectorial SVG -->
+      <svg class="ecualitzador" viewBox="0 0 112 60" role="img" aria-label="Animació de barres de so">
+        <rect x="0" y="0" width="10" height="60" rx="2"/>
+        <rect x="14" y="0" width="10" height="60" rx="2"/>
+        <rect x="28" y="0" width="10" height="60" rx="2"/>
+        <rect x="42" y="0" width="10" height="60" rx="2"/>
+        <rect x="56" y="0" width="10" height="60" rx="2"/>
+        <rect x="70" y="0" width="10" height="60" rx="2"/>
+        <rect x="84" y="0" width="10" height="60" rx="2"/>
+        <rect x="98" y="0" width="10" height="60" rx="2"/>
+        </svg>
+    
+    <!-- Interruptor -->
+     <label class="interruptor" for="anim-toggle"><span class="interruptor_pista"></span>Pausar l'animació</label>
+    </div>
+</section>
+            
+    
+        
+    </main>
+    </section>
+</body>
+</html>
