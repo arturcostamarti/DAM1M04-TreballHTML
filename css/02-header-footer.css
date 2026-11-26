@@ -82,3 +82,42 @@
     border-left-color:var(--rojo2)
 }
 
+.pie{
+    background:var(--gris);
+    border-top:2px solid var(--rojo);
+    padding:1.5rem 0
+}
+.pie__contenido{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:1rem
+}
+.redes{
+    display:flex;
+    gap:.75rem;
+    list-style:none
+}
+.redes a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:46px;
+    height:46px;
+    border:2px solid var(--rojo);
+    border-radius:50%;
+    font-size:1.25rem;
+    color:var(--blanco);
+    transition:background var(--t),transform var(--t),border-color var(--t)
+}
+.redes a:hover,.redes a:focus-visible{
+    background:var(--rojo2);
+    border-color:var(--rojo2);
+    color:var(--blanco);
+    transform:translateY(-4px) rotate(10deg)
+}
+.copyright{flex:1 1 100%;
+    text-align:right;
+    font-size:.9rem;
+    color:var(--cemento)
+}
