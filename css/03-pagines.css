@@ -36,3 +36,71 @@
     margin:1rem 0 1.5rem;
     font-size:1.3rem
 }
+
+/* Animación SVG */
+
+.equalitzador {
+    width: 140px;
+    margin-top: 2rem;
+    fill: var(--rojo);
+}
+
+.equalitzador rect {
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+/* Interruptor */
+.interruptor {
+    display: inline-flex;
+    align-items: center;
+    gap: .7rem;
+    margin-top: 1.2rem;
+    min-height: 48px;
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.interruptor_pista {
+    position: relative;
+    width: 50px;
+    height: 28px;
+    background: var(--rojo);
+    border-radius: 14px;
+    transition: background var(--t);
+}
+
+.interruptor_pista::after {
+    content:"";
+    position: absolute;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background: var(--blanco);
+    border-radius: 50%;
+    transition: transform var(--t);
+}
+#anim-toggle:checked ~ main .interruptor_pista {
+    background: var(--cemento);
+}
+#anim-toggle:checked ~ main .interruptor_pista::after {
+    transform: translateX(22px);
+}
+#anim-toggle:focus-visible ~ main .interruptor__pista{outline:3px solid var(--blanco);outline-offset:3px}
+
+/* Promoció del disc */
+.promo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.promo_portada {
+    flex: 0 1 320px;
+    border-radius: var(--radio);
+    box-shadow: 10px 10px 0 var(--rojo);
+}
+
+.promo_texto {flex: 1 1 300px;}
+.promo_texto p {margin-bottom: 1rem;}
